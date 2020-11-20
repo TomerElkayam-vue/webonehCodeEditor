@@ -63,6 +63,10 @@ export default class codeEditor extends Vue {
       this.$refs.cmEditor.cminstance.markText(this.$refs.cmEditor.cminstance.getCursor(true), this.$refs.cmEditor.cminstance.getCursor(false), {className: "styled-background"});  
       this.$refs.cmEditor.cminstance.setSelection(this.$refs.cmEditor.cminstance.getCursor(true), this.$refs.cmEditor.cminstance.getCursor(true))
   }
+
+  multiply(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+  }
  
 
   code: String = `const addItemToTheList = function addItemToTheList(data) {
