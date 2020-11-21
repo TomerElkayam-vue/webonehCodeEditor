@@ -71,6 +71,10 @@ export default class codeEditor extends Vue {
   divide(firstNumber, secondNumber) {
     return firstNumber / secondNumber;
   }
+
+  sum(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+  }
  
 
   code: String = `const addItemToTheList = function addItemToTheList(data) {
